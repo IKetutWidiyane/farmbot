@@ -14,7 +14,7 @@ const variants: Record<Variant, string> = {
 };
 
 type BaseProps = {
-  children: ReactNode;
+  children?: ReactNode;
   variant?: Variant;
   className?: string;
 };
