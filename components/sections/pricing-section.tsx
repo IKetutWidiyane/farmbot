@@ -31,13 +31,13 @@ export function PricingSection() {
                   </span>
                 ) : null}
                 <h3 className="text-xl font-bold">{plan.name}</h3>
-                <p className="mt-3 min-h-14 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                <p className="mt-3 min-h-14 text-sm leading-6 text-zinc-600 dark:text-zinc-300">
                   {plan.description}
                 </p>
                 <div className="mt-6 flex items-end gap-1">
                   <span className="text-4xl font-black">{plan.price}</span>
                   {plan.price !== "Custom" ? (
-                    <span className="pb-1 text-slate-500 dark:text-slate-400">
+                    <span className="pb-1 text-zinc-500 dark:text-zinc-400">
                       /month
                     </span>
                   ) : null}
@@ -45,7 +45,7 @@ export function PricingSection() {
                 <ul className="mt-7 space-y-3">
                   {plan.features.map((feature) => (
                     <li
-                      className="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300"
+                      className="flex items-center gap-3 text-sm text-zinc-600 dark:text-zinc-300"
                       key={feature}
                     >
                       <CheckCircle2 className="h-5 w-5 shrink-0 text-accent" />

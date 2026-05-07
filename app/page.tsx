@@ -11,7 +11,7 @@ import { TestimonialsSection } from "@/components/sections/testimonials-section"
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-slate-50 text-slate-950 dark:bg-ink dark:text-white">
+    <main className="min-h-screen overflow-hidden bg-zinc-50 text-zinc-950 dark:bg-ink dark:text-white">
       <Navbar />
       <HeroSection />
       <FeaturesSection />

@@ -1,8 +1,8 @@
 import {
   Activity,
   Bot,
-  BrainCircuit,
   CloudSun,
+  Cpu,
   Droplets,
   Leaf,
   LineChart,
@@ -33,10 +33,10 @@ export const features: Feature[] = [
     icon: RadioTower
   },
   {
-    title: "AI Prediction",
+    title: "Sensor Intelligence",
     description:
-      "Forecast irrigation needs, crop stress, and weather-sensitive risks before they impact yield.",
-    icon: BrainCircuit
+      "Turn field signals into useful recommendations for irrigation, crop stress, and weather-sensitive risks.",
+    icon: Cpu
   },
   {
     title: "Automation System",
@@ -53,9 +53,9 @@ export const workSteps: WorkStep[] = [
       "Distributed IoT sensors capture field conditions every few seconds across your farm."
   },
   {
-    title: "AI analyzes data",
+    title: "Platform analyzes patterns",
     description:
-      "FarmBot transforms raw signals into predictions, recommendations, and anomaly alerts."
+      "FarmBot transforms raw signals into recommendations, trends, and anomaly alerts."
   },
   {
     title: "System automates actions",
@@ -70,14 +70,14 @@ export const dashboardMetrics = [
     value: "27.8 C",
     trend: "+1.2%",
     icon: ThermometerSun,
-    color: "text-violet-500"
+    color: "text-amber-400"
   },
   {
     label: "Humidity",
     value: "68%",
     trend: "-3.4%",
     icon: Droplets,
-    color: "text-cyan-500"
+    color: "text-lime-300"
   },
   {
     label: "Soil Condition",
@@ -105,10 +105,10 @@ export const pricingPlans: PricingPlan[] = [
   {
     name: "Pro",
     price: "$59",
-    description: "For growing teams that need automation and AI insights.",
+    description: "For growing teams that need automation and sensor insights.",
     features: [
       "15 sensor nodes",
-      "AI predictions",
+      "Sensor recommendations",
       "Automation rules",
       "Priority support"
     ],
@@ -155,9 +155,9 @@ export const faqs: FAQ[] = [
       "Yes. FarmBot is designed around modular IoT integrations and can be adapted for common field sensors and gateways."
   },
   {
-    question: "Does the AI work without historical data?",
+    question: "Can FarmBot start without historical data?",
     answer:
-      "The system can start with baseline models, then improves recommendations as it learns from your farm conditions."
+      "The system can start with baseline thresholds, then improves recommendations as it learns from your farm conditions."
   },
   {
     question: "Is this landing page open-source ready?",

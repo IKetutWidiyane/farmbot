@@ -10,21 +10,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#8b5cf6",
-        secondary: "#6b21a8",
-        accent: "#22c55e",
-        ink: "#0f172a"
+        primary: "#16a34a",
+        secondary: "#15803d",
+        accent: "#f59e0b",
+        ink: "#101410"
       },
       fontFamily: {
         sans: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"]
       },
       boxShadow: {
-        glow: "0 0 55px rgba(139, 92, 246, 0.35)",
-        "green-glow": "0 0 45px rgba(34, 197, 94, 0.22)"
+        glow: "0 0 42px rgba(22, 163, 74, 0.26)",
+        "green-glow": "0 0 36px rgba(245, 158, 11, 0.2)"
       },
       backgroundImage: {
         "radial-farm":
-          "radial-gradient(circle at top left, rgba(139, 92, 246, 0.28), transparent 35%), radial-gradient(circle at 75% 20%, rgba(34, 197, 94, 0.18), transparent 32%)"
+          "radial-gradient(circle at top left, rgba(22, 163, 74, 0.22), transparent 34%), radial-gradient(circle at 78% 18%, rgba(245, 158, 11, 0.14), transparent 30%), radial-gradient(circle at 52% 92%, rgba(132, 204, 22, 0.12), transparent 34%)"
       }
     }
   },

@@ -18,7 +18,7 @@ export function TestimonialsSection() {
             <Reveal delay={index * 0.08} key={testimonial.name}>
               <Card className="h-full">
                 <Quote className="h-8 w-8 text-primary" />
-                <p className="mt-5 leading-7 text-slate-600 dark:text-slate-300">
+                <p className="mt-5 leading-7 text-zinc-600 dark:text-zinc-300">
                   &quot;{testimonial.quote}&quot;
                 </p>
                 <div className="mt-6 flex items-center gap-3">
@@ -30,7 +30,7 @@ export function TestimonialsSection() {
                   </div>
                   <div>
                     <p className="font-bold">{testimonial.name}</p>
-                    <p className="text-sm text-slate-500 dark:text-slate-400">
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400">
                       {testimonial.role}
                     </p>
                   </div>

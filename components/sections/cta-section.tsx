@@ -7,7 +7,7 @@ export function CTASection() {
     <section className="section-padding" id="cta">
       <div className="container-page">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[2rem] bg-slate-950 px-6 py-16 text-center text-white shadow-glow sm:px-10">
+          <div className="relative overflow-hidden rounded-[2rem] bg-zinc-950 px-6 py-16 text-center text-white shadow-glow sm:px-10">
             <div className="absolute inset-0 bg-radial-farm opacity-90" />
             <div className="relative mx-auto max-w-3xl">
               <div className="mx-auto mb-5 grid h-12 w-12 place-items-center rounded-2xl bg-white/10">
@@ -16,9 +16,9 @@ export function CTASection() {
               <h2 className="text-3xl font-black tracking-normal sm:text-5xl">
                 Grow the future with intelligent farming.
               </h2>
-              <p className="mt-5 text-lg leading-8 text-slate-300">
-                Launch a polished FarmBot landing page today and turn your AI
-                agriculture idea into a credible product experience.
+              <p className="mt-5 text-lg leading-8 text-zinc-300">
+                Launch a polished FarmBot landing page today and turn your IoT
+                farming idea into a credible product experience.
               </p>
               <Button className="mt-8" href="#pricing">
                 Get Started

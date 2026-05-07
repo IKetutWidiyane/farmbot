@@ -1,6 +1,6 @@
 # FarmBot Landing Page
 
-FarmBot is a modern, production-ready landing page template for smart farming, IoT, AI, SaaS, and AgriTech startups. It is built with Next.js 14 App Router, TypeScript, Tailwind CSS 3.4, Framer Motion, and next-themes.
+FarmBot is a modern, production-ready landing page template for smart farming, IoT, automation, SaaS, and AgriTech startups. It is built with Next.js 14 App Router, TypeScript, Tailwind CSS 3.4, Framer Motion, and next-themes.
 
 ## Features
 

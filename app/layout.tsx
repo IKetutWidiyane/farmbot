@@ -9,15 +9,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "FarmBot - Smart Farming with AI & IoT",
+  title: "FarmBot - Smart Farming with IoT Automation",
   description:
-    "A modern landing page template for an AI and IoT smart farming startup.",
-  keywords: ["FarmBot", "Smart Farming", "IoT", "AI", "Agriculture", "SaaS"],
+    "A modern landing page template for an IoT smart farming startup.",
+  keywords: ["FarmBot", "Smart Farming", "IoT", "Automation", "Agriculture", "SaaS"],
   authors: [{ name: "FarmBot" }],
   openGraph: {
-    title: "FarmBot - Smart Farming with AI & IoT",
+    title: "FarmBot - Smart Farming with IoT Automation",
     description:
-      "Real-time monitoring, AI prediction, and automation for modern agriculture.",
+      "Real-time monitoring, sensor insights, and automation for modern agriculture.",
     type: "website"
   }
 };

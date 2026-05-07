@@ -45,7 +45,7 @@ export function FAQSection() {
                     )}
                   >
                     <div className="overflow-hidden">
-                      <p className="px-5 pb-5 leading-7 text-slate-600 dark:text-slate-300">
+                      <p className="px-5 pb-5 leading-7 text-zinc-600 dark:text-zinc-300">
                         {faq.answer}
                       </p>
                     </div>

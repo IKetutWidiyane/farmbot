@@ -17,16 +17,16 @@ html {
 body {
   min-height: 100vh;
   background: #f8fafc;
-  color: #0f172a;
+  color: #101410;
 }
 
 .dark body {
-  background: #0f172a;
+  background: #101410;
   color: #f8fafc;
 }
 
 ::selection {
-  background: rgba(139, 92, 246, 0.35);
+  background: rgba(22, 163, 74, 0.32);
 }
 
 @layer utilities {
@@ -35,7 +35,7 @@ body {
   }
 
   .glass-panel {
-    @apply border border-white/30 bg-white/65 shadow-xl shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-white/[0.06] dark:shadow-black/20;
+    @apply border border-white/30 bg-white/65 shadow-xl shadow-zinc-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-white/[0.06] dark:shadow-black/20;
   }
 
   .section-padding {

@@ -6,11 +6,11 @@ type Variant = "primary" | "secondary" | "ghost";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-primary text-white shadow-glow hover:bg-secondary hover:shadow-violet-500/30",
+    "bg-primary text-white shadow-glow hover:bg-secondary hover:shadow-green-500/30",
   secondary:
-    "border border-slate-200 bg-white/80 text-slate-950 hover:border-primary/40 hover:text-primary dark:border-white/15 dark:bg-white/10 dark:text-white",
+    "border border-zinc-200 bg-white/80 text-zinc-950 hover:border-primary/40 hover:text-primary dark:border-white/15 dark:bg-white/10 dark:text-white",
   ghost:
-    "text-slate-700 hover:bg-slate-900/5 dark:text-slate-200 dark:hover:bg-white/10"
+    "text-zinc-700 hover:bg-zinc-900/5 dark:text-zinc-200 dark:hover:bg-white/10"
 };
 
 type BaseProps = {

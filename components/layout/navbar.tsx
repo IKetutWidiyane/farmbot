@@ -24,7 +24,7 @@ export function Navbar() {
         <div className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
             <Link
-              className="text-sm font-medium text-slate-600 transition hover:text-primary dark:text-slate-300"
+              className="text-sm font-medium text-zinc-600 transition hover:text-primary dark:text-zinc-300"
               href={item.href}
               key={item.href}
             >
@@ -61,7 +61,7 @@ export function Navbar() {
           <div className="glass-panel rounded-2xl p-3">
             {navItems.map((item) => (
               <Link
-                className="block rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-900/5 dark:text-slate-200 dark:hover:bg-white/10"
+                className="block rounded-xl px-4 py-3 text-sm font-semibold text-zinc-700 hover:bg-zinc-900/5 dark:text-zinc-200 dark:hover:bg-white/10"
                 href={item.href}
                 key={item.href}
                 onClick={() => setOpen(false)}
