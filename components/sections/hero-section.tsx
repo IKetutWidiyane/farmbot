@@ -11,13 +11,13 @@ import { ArrowRight, PlayCircle, ShieldCheck, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // --- KOMPONEN EFEK BINARY (HANYA UNTUK JUDUL) ---
-const ScrambleText = ({ text, as: Component = "span", className }) => {
+const ScrambleText = ({ text, as: Component = "span", className }: { text: string; as?: React.ElementType; className?: string }) => {
   const [displayText, setDisplayText] = useState(text);
-  const intervalRef = useRef(null);
+  const intervalRef = useRef<ReturnType<typeof setInterval>>();
 
   const triggerScramble = () => {
     let iteration = 0;
-    clearInterval(intervalRef.current);
+    if (intervalRef.current) clearInterval(intervalRef.current);
     
     intervalRef.current = setInterval(() => {
       setDisplayText((prev) =>
@@ -26,25 +26,24 @@ const ScrambleText = ({ text, as: Component = "span", className }) => {
           .map((char, index) => {
             if (index < iteration) return text[index];
             if (char === " ") return " ";
-            // Hanya gunakan 0 dan 1 untuk efek Binary
             return Math.random() > 0.5 ? "1" : "0"; 
           })
           .join("")
       );
       
       if (iteration >= text.length) {
-        clearInterval(intervalRef.current);
+        if (intervalRef.current) clearInterval(intervalRef.current);
       }
       
-      // Kecepatan transisi teks
       iteration += 1.5; 
     }, 40);
   };
 
-  // Jalankan animasi sekali saat halaman pertama kali dimuat
   useEffect(() => {
     triggerScramble();
-    return () => clearInterval(intervalRef.current);
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -67,7 +66,7 @@ export function HeroSection() {
   const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["10deg", "-10deg"]);
   const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-10deg", "10deg"]);
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const width = rect.width;
     const height = rect.height;
@@ -158,7 +157,7 @@ export function HeroSection() {
                   whileHover={{ scale: 1.05, color: "#22c55e" }}
                   className="flex cursor-pointer items-center gap-2 transition-colors"
                 >
-                  <ShieldCheck className="h-4.5 w-4.5 text-accent" />
+                  <ShieldCheck className="h-4 w-4 text-accent" />
                   {item}
                 </motion.span>
               )
